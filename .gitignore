@@ -1,10 +1,12 @@
+# Node modules (all folders)
 **/node_modules
-dist
-**/dist
-build
-logs
-*.log
 
+# Build / compiled output
+**/dist
+**/build
+
+# Logs
+logs
 *.log
 npm-debug.log*
 pnpm-debug.log*
@@ -12,12 +14,13 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# OS
+# OS files
 .DS_Store
+Thumbs.db
 
-# Tests
-/coverage
-/.nyc_output
+# Test coverage
+**/coverage
+**/.nyc_output
 
 # IDEs and editors
 /.idea
@@ -28,21 +31,21 @@ lerna-debug.log*
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
+# VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+# Environment files
+**/.env
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env.local
 
-# temp directory
+# Temp directories
 .temp
 .tmp
 
@@ -52,5 +55,5 @@ pids
 *.seed
 *.pid.lock
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
+# Node.js diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
